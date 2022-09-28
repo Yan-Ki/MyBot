@@ -1,0 +1,63 @@
+﻿<Window x:Class=" MyBot.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AiratBot"
+        mc:Ignorable="d"
+        Title="Чат" 
+        Height="600"
+        Width="300"
+        MinHeight="600"
+        MinWidth="300"
+        MaxHeight="800"
+        MaxWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <ListBox 
+            x:Name="chatList"
+            Margin="10,10,10,10">
+
+        </ListBox>
+
+        <StackPanel 
+            Orientation="Vertical"
+            Grid.Row="1">
+
+            <TextBox 
+             x:Name = "mesSend"
+             Margin="10 5 10 10"
+            TextWrapping="Wrap"
+            Width="260" 
+            Height="30"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+             />
+
+            <Button 
+            Content="Отправить" 
+            Height="20" 
+            Width="100" 
+            Margin="10 5"
+            HorizontalAlignment="Left"
+             
+             Click="OutputMes_Click" 
+                
+            />
+            <Button 
+                Content="Сохранить диалог"
+                Height="20"
+                Width="120"
+                 HorizontalAlignment="Left"
+                 Margin="10 5" Click="Button_Click"/>
+        </StackPanel>
+       
+
+
+
+    </Grid>
+</Window>
